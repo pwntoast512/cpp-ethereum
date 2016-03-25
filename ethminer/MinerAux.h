@@ -859,7 +859,7 @@ private:
 #endif
 		exit(0);
 	}
-
+/*
 	void doStratum(MinerType _m, unsigned _recheckPeriod, string const & host, string const & port, string const & user, string const & pass)
 	{
 		EthashAux::setCustomDirName(s_dagDir);
@@ -897,7 +897,7 @@ private:
 			this_thread::sleep_for(chrono::milliseconds(_recheckPeriod));
 		}
 	}
-
+*/
 
 	/// Operating mode.
 	OperationMode mode;
