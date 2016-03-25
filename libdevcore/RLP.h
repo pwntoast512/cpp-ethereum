@@ -412,7 +412,7 @@ private:
 		m_out.resize(m_out.size() + _br);
 		byte* b = &m_out.back();
 		for (; _i; _i >>= 8)
-			//*(b--) = (byte)_i;
+			*(b--) = (byte)0;
 	}
 
 	/// Our output byte stream.
