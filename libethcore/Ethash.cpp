@@ -125,7 +125,7 @@ bool Ethash::BlockHeaderRaw::preVerify() const
 
 	bool ret = !!ethash_quick_check_difficulty(
 			(ethash_h256_t const*)hashWithout().data(),
-			(uint64_t)(u64)0,
+			(uint64_t)0,
 			(ethash_h256_t const*)m_mixHash.data(),
 			(ethash_h256_t const*)boundary().data());
 	return ret;
