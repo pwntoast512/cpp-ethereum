@@ -93,7 +93,7 @@ template <unsigned N> FixedHash<N> jsToFixed(std::string const& _s)
 
 inline std::string jsToFixed(double _s)
 {
-	return toJS(u256(_s * (double)(u256(1) << 128)));
+	//return toJS(u256(_s * (double)(u256(1) << 128)));
 }
 
 template <unsigned N> boost::multiprecision::number<boost::multiprecision::cpp_int_backend<N * 8, N * 8, boost::multiprecision::unsigned_magnitude, boost::multiprecision::unchecked, void>> jsToInt(std::string const& _s)
