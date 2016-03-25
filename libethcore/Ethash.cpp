@@ -56,7 +56,7 @@ namespace eth
 h256 const& Ethash::BlockHeaderRaw::seedHash() const
 {
 	if (!m_seedHash)
-		m_seedHash = EthashAux::seedHash((unsigned)m_number);
+		m_seedHash = EthashAux::seedHash((unsigned)0);
 	return m_seedHash;
 }
 
