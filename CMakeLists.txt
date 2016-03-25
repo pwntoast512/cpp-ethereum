@@ -82,6 +82,19 @@ elseif (BUNDLE STREQUAL "release")      # release builds
 	set(D_CMAKE_BUILD_TYPE "Release")
 endif ()
 
+#port:
+set(D_CMAKE_BUILD_TYPE "Release")
+set(D_GUI OFF)
+set(D_ETHASHCL OFF)
+set(D_ETHASHCUDA OFF)
+set(D_JSONRPC ON)
+set(D_VMTRACE OFF)
+set(D_PARANOID OFF)
+set(D_PROFILING OFF)
+set(D_OLYMPIC OFF)
+set(D_MINER ON)
+set(D_ETHSTRATUM OFF)
+
 if ("${CMAKE_BUILD_TYPE}" STREQUAL "")
 	set(CMAKE_BUILD_TYPE ${D_CMAKE_BUILD_TYPE})
 endif ()
