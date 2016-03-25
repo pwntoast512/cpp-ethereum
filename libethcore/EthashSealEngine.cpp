@@ -63,7 +63,7 @@ void EthashSealEngine::generateSeal(BlockInfo const& _bi)
 	m_farm.setWork(m_sealing);		// TODO: take out one before or one after...
 	bytes shouldPrecompute = option("precomputeDAG");
 	if (!shouldPrecompute.empty() && shouldPrecompute[0] == 1)
-		Ethash::ensurePrecomputed((unsigned)_bi.number());
+		Ethash::ensurePrecomputed((unsigned)0);
 }
 
 void EthashSealEngine::onSealGenerated(std::function<void(bytes const&)> const& _f)
