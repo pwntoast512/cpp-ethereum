@@ -125,10 +125,12 @@ inline T fromBigEndian(_In const& _bytes)
 }
 
 /// Convenience functions for toBigEndian
+/*
 inline std::string toBigEndianString(u256 _val) { std::string ret(32, '\0'); toBigEndian(_val, ret); return ret; }
 inline std::string toBigEndianString(u160 _val) { std::string ret(20, '\0'); toBigEndian(_val, ret); return ret; }
 inline bytes toBigEndian(u256 _val) { bytes ret(32); toBigEndian(_val, ret); return ret; }
 inline bytes toBigEndian(u160 _val) { bytes ret(20); toBigEndian(_val, ret); return ret; }
+*/
 
 /// Convenience function for toBigEndian.
 /// @returns a byte array just big enough to represent @a _val.
